@@ -3,3 +3,4 @@
 deadoralive.egg-info/*
 dist/*
 .coverage
+build/*
