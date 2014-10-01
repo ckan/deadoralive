@@ -202,3 +202,7 @@ First activate your virtualenv then install the dev requirements:
 Then to run the tests do:
 
     nosetests
+
+To run the tests and produce a test coverage report do:
+
+    nosetests --with-coverage --cover-inclusive --cover-erase --cover-tests
