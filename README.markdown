@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/ckan/deadoralive.svg)](https://travis-ci.org/ckan/deadoralive)
+[![Coverage Status](https://img.shields.io/coveralls/ckan/deadoralive.svg)](https://coveralls.io/r/ckan/deadoralive)
 
 Dead or Alive
 =============
