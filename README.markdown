@@ -37,7 +37,7 @@ CKAN site.
 To install for development, create and activate a Python virtual environment
 then do:
 
-    git clone git@github.com:ckan/deadoralive.git
+    git clone https://github.com/ckan/deadoralive.git
     cd deadoralive
     python setup.py develop
 
