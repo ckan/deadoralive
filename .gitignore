@@ -1,0 +1,4 @@
+*.pyc
+.ropeproject/*
+deadoralive.egg-info/*
+dist/*
