@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ckan/deadoralive.svg)](https://travis-ci.org/ckan/deadoralive)
+
 Dead or Alive
 =============
 
