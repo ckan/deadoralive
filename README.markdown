@@ -17,7 +17,7 @@ cron job.  This will enable _ad-hoc_ link checking in response to user
 interactions (i.e. the user clicks on a "check this link/these links now"
 button on the client website, or checking a new resource as soon as a user
 creates it) as well as the currently implemented automatic hourly checks.
-See <https://github.com/ckan/ckanext-deadoralive/issues/15>.
+See <https://github.com/ckan/deadoralive/issues/1>.
 
 
 Requirements
