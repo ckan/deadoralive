@@ -72,10 +72,7 @@ To setup the link checker to run automatically you can add a cron job for it.
 On most UNIX systems you can add a cron job by running `crontab -e` to edit
 your crontab file. Add a line like the following to the file and save it:
 
-    @hourly /path/to/your/virtualenv/bin/deadoralive --url '<your_site>' --apikey <your_api_key>
-
-Replace `/path/to/your/virtualenv/` with the full path to the Python virtual
-environment that you installed deadoralive into.
+    @hourly deadoralive --url '<your_site>' --apikey <your_api_key>
 
 As before replace `<your_site>` with the URL of the site you want to check,
 and `<your_api_key>` with an API key from the site.
@@ -140,9 +137,9 @@ just pass it different `--url` and `--apikey` arguments.
 For example you might setup three cron jobs to check three different sites,
 giving each job a different port so that they can run simultaneously:
 
-    @hourly /path/to/your/virtualenv/bin/deadoralive --url '<first_site>' --apikey <first_api_key> --port 4567
-    @hourly /path/to/your/virtualenv/bin/deadoralive --url '<second_site>' --apikey <second_api_key> --port 4568
-    @hourly /path/to/your/virtualenv/bin/deadoralive --url '<third_site>' --apikey <third_key> --port 4569
+    @hourly deadoralive --url '<first_site>' --apikey <first_api_key> --port 4567
+    @hourly deadoralive --url '<second_site>' --apikey <second_api_key> --port 4568
+    @hourly deadoralive --url '<third_site>' --apikey <third_key> --port 4569
 
 
 API
