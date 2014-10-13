@@ -32,11 +32,11 @@ def get_resources_to_check(client_site_url, apikey):
         for any reason
 
     """
-    url = client_site_url + "deadoralive/get_resources_to_check"
+    url = client_site_url + u"deadoralive/get_resources_to_check"
     response = requests.get(url, headers=dict(Authorization=apikey))
     if not response.ok:
         raise CouldNotGetResourceIDsError(
-            "Couldn't get resource IDs to check: {code} {reason}".format(
+            u"Couldn't get resource IDs to check: {code} {reason}".format(
                 code=response.status_code, reason=response.reason))
     return response.json()
 
@@ -55,13 +55,13 @@ def get_url_for_id(client_site_url, apikey, resource_id):
 
     """
     # TODO: Handle invalid responses from the client site.
-    url = client_site_url + "deadoralive/get_url_for_resource_id"
+    url = client_site_url + u"deadoralive/get_url_for_resource_id"
     params = {"resource_id": resource_id}
     response = requests.get(url, headers=dict(Authorization=apikey),
                             params=params)
     if not response.ok:
         raise CouldNotGetURLError(
-            "Couldn't get URL for resource {id}: {code} {reason}".format(
+            u"Couldn't get URL for resource {id}: {code} {reason}".format(
                 id=resource_id, code=response.status_code,
                 reason=response.reason))
 
@@ -117,7 +117,7 @@ def upsert_result(client_site_url, apikey, resource_id, result):
     """Post the given link check result to the client site."""
 
     # TODO: Handle exceptions and unexpected results.
-    url = client_site_url + "deadoralive/upsert"
+    url = client_site_url + u"deadoralive/upsert"
     params = result.copy()
     params["resource_id"] = resource_id
     requests.post(url, headers=dict(Authorization=apikey), params=params)
@@ -186,19 +186,18 @@ def get_check_and_report(client_site_url, apikey, get_resource_ids_to_check,
         try:
             url = get_url_for_id(client_site_url, apikey, resource_id)
         except CouldNotGetURLError:
-            logger.info("This link checker was not authorized to access "
+            logger.info(u"This link checker was not authorized to access "
                         "resource {0}, skipping.".format(resource_id))
             continue
         result = check_url(url)
         status = result["status"]
         reason = result["reason"]
         if result["alive"]:
-            logger.info("Checking URL {0} of resource {1} succeeded with "
+            logger.info(u"Checking URL {0} of resource {1} succeeded with "
                         "status {2}:".format(url, resource_id, status))
         else:
-            logger.info("Checking URL {0} of resource {1} "
-                        "failed with error {2}:".format(url, resource_id,
-                                                        reason))
+            logger.info(u"Checking URL {0} of resource {1} failed with error "
+                        "{2}:".format(url, resource_id, reason))
         upsert_result(client_site_url, apikey, resource_id=resource_id,
                       result=result)
 
