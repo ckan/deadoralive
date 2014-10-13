@@ -95,6 +95,14 @@ def check_url(url):
         result["reason"] = response.reason
         response.raise_for_status()  # Raise if status_code is not OK.
         result["alive"] = True
+    except AttributeError as err:
+        if err.message == "'NoneType' object has no attribute 'encode'":
+            # requests seems to throw these for some invalid URLs.
+            result["alive"] = False
+            result["reason"] = "Invalid URL"
+            result["status"] = None
+        else:
+            raise
     except requests.exceptions.RequestException as err:
         result["alive"] = False
         if "reason" not in result:
