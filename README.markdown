@@ -8,6 +8,8 @@ Dead or Alive is a simple dead link checker service: it's a command-line script
 or cron job that checks your site for broken links and posts the results back
 to your site using an API (defined below) that your site must implement.
 
+Design: [seanh.cc/posts/background-tasks-as-simple-web-services](http://seanh.cc/posts/background-tasks-as-simple-web-services/)
+
 For [CKAN](http://ckan.org/) sites you can install
 [ckanext-deadoralive](https://github.com/ckan/ckanext-deadoralive) to add Dead
 or Alive support.
