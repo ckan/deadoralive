@@ -1,5 +1,11 @@
 [![Build Status](https://travis-ci.org/ckan/deadoralive.svg)](https://travis-ci.org/ckan/deadoralive)
 [![Coverage Status](https://img.shields.io/coveralls/ckan/deadoralive.svg)](https://coveralls.io/r/ckan/deadoralive)
+[![Latest Version](https://pypip.in/version/deadoralive/badge.svg)](https://pypi.python.org/pypi/deadoralive/)
+[![Downloads](https://pypip.in/download/deadoralive/badge.svg)](https://pypi.python.org/pypi/deadoralive/)
+[![Supported Python versions](https://pypip.in/py_versions/deadoralive/badge.svg)](https://pypi.python.org/pypi/deadoralive/)
+[![Development Status](https://pypip.in/status/deadoralive/badge.svg)](https://pypi.python.org/pypi/deadoralive/)
+[![License](https://pypip.in/license/deadoralive/badge.svg)](https://pypi.python.org/pypi/deadoralive/)
+
 
 Dead or Alive
 =============
