@@ -1,10 +1,10 @@
 [![Build Status](https://travis-ci.org/ckan/deadoralive.svg)](https://travis-ci.org/ckan/deadoralive)
 [![Coverage Status](https://img.shields.io/coveralls/ckan/deadoralive.svg)](https://coveralls.io/r/ckan/deadoralive)
-[![Latest Version](https://pypip.in/version/deadoralive/badge.svg)](https://pypi.python.org/pypi/deadoralive/)
-[![Downloads](https://pypip.in/download/deadoralive/badge.svg)](https://pypi.python.org/pypi/deadoralive/)
-[![Supported Python versions](https://pypip.in/py_versions/deadoralive/badge.svg)](https://pypi.python.org/pypi/deadoralive/)
-[![Development Status](https://pypip.in/status/deadoralive/badge.svg)](https://pypi.python.org/pypi/deadoralive/)
-[![License](https://pypip.in/license/deadoralive/badge.svg)](https://pypi.python.org/pypi/deadoralive/)
+[![Latest Version](https://img.shields.io/pypi/v/deadoralive.svg)](https://pypi.python.org/pypi/deadoralive/)
+[![Downloads](https://img.shields.io/pypi/dm/deadoralive.svg)](https://pypi.python.org/pypi/deadoralive/)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/deadoralive.svg)](https://pypi.python.org/pypi/deadoralive/)
+[![Development Status](https://img.shields.io/pypi/status/deadoralive.svg)](https://pypi.python.org/pypi/deadoralive/)
+[![License](https://img.shields.io/pypi/l/deadoralive.svg)](https://pypi.python.org/pypi/deadoralive/)
 
 
 Dead or Alive
